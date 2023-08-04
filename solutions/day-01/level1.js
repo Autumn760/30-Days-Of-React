@@ -25,6 +25,17 @@ console.log(itCompanies[0])
 console.log(itCompanies[lastIndex])-1
 console.log(itCompanies[3])
 
+console.log(itCompanies[0].toUpperCase());
+console.log(itCompanies[1].toUpperCase());
+console.log(itCompanies[2].toUpperCase());
+console.log(itCompanies[3].toUpperCase());
+console.log(itCompanies[4].toUpperCase());
+console.log(itCompanies[5].toUpperCase());
+console.log(itCompanies[6].toUpperCase()); 
+
+//How do I add the word 'and' between Oracle & Amazon?
+console.log(`${itCompanies} are big IT companies.` )
+
 let index = itCompanies.indexOf('Apple')
 if (itCompanies != -1) {
     console.log("This company does exist in the array")
@@ -35,13 +46,17 @@ itCompanies.forEach(function(companies) {
     console.log(companies);
    }); 
 
-console.log(itCompanies[0].toUpperCase());
-console.log(itCompanies[1].toUpperCase());
-console.log(itCompanies[2].toUpperCase());
-console.log(itCompanies[3].toUpperCase());
-console.log(itCompanies[4].toUpperCase());
-console.log(itCompanies[5].toUpperCase());
-console.log(itCompanies[6].toUpperCase()); 
+let moreThanLetterO = itCompanies.indexOf('o')
+if (moreThanLetterO >= -1){
+    console.log("There are more than one letter o.")
+} else {
+    console.log('There are no words with more than o.')
+}
 
-console.log(`${itCompanies} are big IT companies.` )
-console.log(itCompanies.toString() ," are big IT companies." );
+itCompanies.sort()
+console.log(itCompanies)
+itCompanies.reverse()
+console.log(itCompanies)
+
+console.log(itCompanies.slice(0,3))
+console.log(itCompanies.slice(4,7))
